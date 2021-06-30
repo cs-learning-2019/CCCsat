@@ -1,0 +1,15 @@
+1) Go to Microsoft Teams and ensure you are able to watch the class recording.
+   If you are not able to watch the recoding then please contact me ASAP through teams (just direct message me).
+
+2) Download and install Python https://www.python.org/downloads/ as I have shown you in class. You do not need to do this if you already have Python.
+   Note: if you forgot then you can watch the class recording to help you.
+
+3) You have Python installed open up IDLE and open a new file. Then write some simple code and run the code and see if it works.
+   If the code does not run or Python does not work then something went wrong and we can sort it out next class.
+
+4) Create an account for CCC here https://cccgrader.com/index.php
+
+5) Enjoy your Canada Day Weekend. Next week will be much heavier.
+
+REMEMBER IF SOMETHING IS NOT CLEAR THEN MAKE SURE TO WATCH THE CLASS RECORDING AND ALSO CHECK THE LESSON FILES!!!
+DO NOT BE LAZY!!!

@@ -1,0 +1,17 @@
+1) What is the CCC and why should you care?
+
+2) Downloading Python and how to use it. https://www.python.org/downloads/
+	- You can even try using an IDE https://www.jetbrains.com/pycharm/  (you really do not need this for the CCC)
+
+3) Understanding the format and how the CCC is run.
+	- Ensure we take a look the the CCC online grader https://cccgrader.com/index.php
+	- You guys need to make student accounts
+	- Our school number is 057007907
+
+4) Review of some Python fundamentals (mainly Python dictionaries and list)
+	- Use a dictionary to find all the duplicates in a list of integers
+	- Given a binary string determine if it contains a substring in which there are 
+	  exactly four consecutive 1s.
+	- Given an alpha numeric string return a new string where each digit is increased by one (9 --> 0)
+	  and each character is the next in the alphabet
+	- Given an array of strings convert it into a 2D list with each sublist element is a single chr
