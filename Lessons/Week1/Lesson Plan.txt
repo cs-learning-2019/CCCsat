@@ -8,7 +8,9 @@
 	- You guys need to make student accounts
 	- Our school number is 057007907
 
-4) Review of some Python fundamentals (mainly Python dictionaries and list)
+4) Talk about how homework will be handled in this class
+
+5) Review of some Python fundamentals (mainly Python dictionaries and list)
 	- Use a dictionary to find all the duplicates in a list of integers
 	- Given a binary string determine if it contains a substring in which there are 
 	  exactly four consecutive 1s.
