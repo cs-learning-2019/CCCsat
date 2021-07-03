@@ -9,7 +9,9 @@
 
 4) Create an account for CCC here https://cccgrader.com/index.php   Our school number is 057007907
 
-5) Enjoy your Canada Day Weekend. Next week will be much heavier.
+5) Review Python Dicts https://www.w3schools.com/python/python_dictionaries.asp
+
+6) Enjoy your Canada Day Weekend. Next week will be much heavier.
 
 REMEMBER IF SOMETHING IS NOT CLEAR THEN MAKE SURE TO WATCH THE CLASS RECORDING AND ALSO CHECK THE LESSON FILES!!!
 DO NOT BE LAZY!!!
