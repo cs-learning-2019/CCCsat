@@ -4,7 +4,7 @@
 	- You can even try using an IDE https://www.jetbrains.com/pycharm/  (you really do not need this for the CCC)
 
 3) Understanding the format and how the CCC is run.
-	- Ensure we take a look the the CCC online grader https://cccgrader.com/index.php
+	- Ensure we take a look at the the CCC online grader https://cccgrader.com/index.php
 	- You guys need to make student accounts
 	- Our school number is 057007907
 

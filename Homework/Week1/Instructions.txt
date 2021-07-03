@@ -7,7 +7,7 @@
 3) You have Python installed open up IDLE and open a new file. Then write some simple code and run the code and see if it works.
    If the code does not run or Python does not work then something went wrong and we can sort it out next class.
 
-4) Create an account for CCC here https://cccgrader.com/index.php
+4) Create an account for CCC here https://cccgrader.com/index.php   Our school number is 057007907
 
 5) Enjoy your Canada Day Weekend. Next week will be much heavier.
 
