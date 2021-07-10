@@ -1,0 +1,51 @@
+For homework you are required to write code to solve the following problems.
+For each question you are required to create a new Python file. 
+For example, for the first the first question you will have question1.py.
+For the second question you will have question2.py and etc.
+You will hand in the homework using the chat at the beginning of next class.
+What you should do is put all your Python files into one folder called CCC_Week2_HW
+and zip/compress it into a zip file so CCC_Week2_HW.zip. You will hand in the zip file to me.
+Look here if you do not know how to zip a folder
+https://support.microsoft.com/en-us/windows/zip-and-unzip-files-f6dde0a7-0fec-8294-e1d3-703ed85e7ebc
+
+Question 1
+Given a list of numbers sort it from largest to smallest and print the new list to the console. Hint: there is a built-in
+function/method that you can use to sort a Python List. I suggest you search it up if you do not know it.
+
+Below is some code to start you off
+
+list_of_nums = [2, 1, 0, 0, -1, 5, 9, 10, 11, 3, 6, 5]
+<blah blah>
+<blah blah>
+<blah blah>
+<blah blah>
+print(sorted_list_of_nums)
+
+
+Question 2
+Given a list of names and a separate list containing the ages of those people, create a dictionary which maps ages to the list
+of names who have that age. Confusing right? Ok I will give you an exmaple...
+
+names = ["Kelly", "John", "Kevin", "Tony", "Jack", "Wilson", "Tina", "Cab"]
+ages = [7, 5, 6, 8, 7, 6, 5, 7]
+
+From the two list above you can tell that Kelly is 7, John is 5, Kevin is 6, Tony is 8 Jack is 7 and so on... you get the point.
+Your goal is to create a dictionary that looks like the following...
+output = {7:["Kelly", "Jack", "Cab"], 5:["John", "Tina"], 6:["Kevin", "Wilson"], 8:["Tony"]}
+
+
+Question 3
+Along with the instructions for the homework you should see a file called input.txt. You can download this file from github
+or you can simply copy and paste to create you own copy on your computer.
+
+input.txt is a simple text file containing first and last name pairs (one first and last name per row).
+
+Your job is to write python code to read in the text file and store the first and last names in two separate list. At the end your 
+program should print the two lists to the console. Note: For this question you may find the split function/method useful. 
+Check out https://www.w3schools.com/python/ref_string_split.asp for more information.
+
+
+Note: This homework is meant to be easy though question 2 is a bit harder.
+
+
+

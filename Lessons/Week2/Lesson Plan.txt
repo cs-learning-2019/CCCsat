@@ -1,0 +1,17 @@
+1) Take up homework.
+
+2) Review some of the Python fundamentals (mainly Python dictionaries and list)
+	- Use a dictionary to find all the duplicates in a list of integers [Done from last class]
+	- Given a binary string determine if it contains a substring in which there are 
+	  exactly four consecutive 1s.
+	- Given an alpha numeric string return a new string where each digit is increased by one (9 --> 0)
+	  and each character is the next in the alphabet
+	- Given an array of strings convert it into a 2D list with each sublist element is a single chr
+
+3) Note: You should already understand for loops, while loops, if, else, elif and the 4 main data types (Strings, int, floats, boolean)
+If you do not then you should review it or let me know right now. Do not lie to me. I will find out.
+I will use these concepts a lot and will assume you understand it.
+
+4) Look at how we can read in data from a file. This is extremly important for the CCC.
+
+5) Any extra time will be spent looking at the online grader.
