@@ -2,10 +2,6 @@
 
 2) Briefly go over reading from a file again.
 
-3) Look at some problems involving double for loops
+3) Look at some problems involving double for loops and/or 2d data structures
 - Given a 2d list of numbers print out each number on a new line (easy question)
 - Given a 2d grid determine if there is a winning move for a player in tic-tak-toe
-- Given a grade to list of names dictionary determine how many names have a length greater than 4 and contains no a, b or c
-grade_to_names = {1: ["bob", "ceb", "Tonoro", "John"], 2: ["Kavanny", "Jacmmmy", "zed"], 3: ["Windows", "Zemmky"]}
-
-4) Look at a past CCC test and CCC online grader
