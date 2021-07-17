@@ -1,0 +1,11 @@
+1) Ensure you can login into the CCC online grader
+
+2) In the CCC online grader work on CCC 2010 Junior.
+Specifically I want you to work on question 2 and 3 for homework.
+So that is "Up and Down" and "Punchy"
+
+3) You do not need to do this for homework but if you want to challenge yourself 
+then please try question 4, "Global Warming"
+
+
+NOTE: YOU MUST SUBMIT THE FILES USING THE CCC ONLINE GRADER LIKE I SHOWED YOU IN CLASS!!!
