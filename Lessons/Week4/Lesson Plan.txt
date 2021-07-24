@@ -1,0 +1,5 @@
+1) Take up homework.
+
+2) Given a 2d grid determine if there is a winning move for a player in tic-tak-toe
+
+3) Look at some CCC questions
