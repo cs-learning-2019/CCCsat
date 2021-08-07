@@ -35,6 +35,8 @@ def check_if_winning_move(row, col, grid):
 
     grid[row][col] = ""
 
+    return False
+
 # Check to see if o has a winning move and which spot
 has_winning_move = False
 for row in range(len(grid)):

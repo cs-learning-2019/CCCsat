@@ -1,1 +1,2 @@
-TBD
+Go to the CCC online grader and do Question 3 and Question 4 on the CCC 2011 Junior.
+The questions are Sumac Sequences and Boring Business.
