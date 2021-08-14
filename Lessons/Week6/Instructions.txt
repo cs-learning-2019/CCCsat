@@ -1,0 +1,5 @@
+1) Take up the HW questions (2011 Q3 and Q4)
+
+2) Do Q5 from 2010 contest (BFS)
+
+3) If we have time then do Q5 from 2011 contest

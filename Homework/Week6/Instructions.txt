@@ -1,0 +1,5 @@
+Login to the CCC online grader and complete the first three questions for the 2012 contest.
+During class next week I will only take up question 3, but I will still post solutions to all
+three questions.
+
+We will work on question 4 and 5 in class soon.
