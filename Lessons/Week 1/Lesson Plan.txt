@@ -1,0 +1,20 @@
+1) Welcome back! Class debreif and student expectations
+    - For the first term we will foucs on J4 and J5
+    - If you continue next term after the CCC then we have fun (for example, building your own pac-man AI and using APIs)
+    - This class is meant to be challenging and you are expected to put your blood, sweat and tears
+      if you plan on doing well.
+    - I am not a mean teacher but I have high standards especially for older students. If you do not pay attention
+      in class and you do not put in the effort to learn what I have to teach you then that is your lost. You wasted
+      your own time and your parent money. That being said I take pride in making sure I explain everything single thing
+      and I am always happy to help you out even after class. Do not bE afriad to ask questions. 
+
+2) Look at the class website. Make sure you bookmark it. For new students feel free to look at what we did in the summer but you
+   do not have to.
+
+3) All of you will need a CCC online grader account. Yes Ethan you need to make a new account!
+   To create an account please go here https://cccgrader.com/register.php  the school number is 057007907
+   After that I will approve your account and you can login here https://cccgrader.com/index.php
+
+[Break Time 5Min]
+
+4) Alright lets have some fun! 2021 J4 and J5

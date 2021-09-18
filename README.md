@@ -1,2 +1,2 @@
 # CCCsat
-Canadian Computing Competition - July &amp; Aug - Saturday 5:00PM to 6:30PM
+Canadian Computing Competition - Fall 2021 - Saturday 5:00PM to 6:30PM
