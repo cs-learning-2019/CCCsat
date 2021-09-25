@@ -1,0 +1,23 @@
+1) Take up 2021 J4 and J5 code (doing these questions was your homework)
+
+2) Take a look at J3 and J4 from 2020
+
+3) Look at J4 from 2019
+
+4) If time permits then look at DFS and BFS and graph theory
+- What is a graph?
+- what are nodes/vertices? What is an adjacent node/neighbour?
+- Degree of a vertex?
+- What about cycles in a graph?
+- What the different kinds of grpahs?
+   - Connected vs non-connected
+   - Directed vs non-directed
+   - Weighted vs non-weighted
+   - What is a tree (Connected aycylic graph, leaf has degree 1)?
+- What is a walk and path in GT?
+- What kinds of applications?
+- Adjacency Matrix and Adjacency List (BTW this is a great website for this https://www.geeksforgeeks.org/graph-and-its-representations/)
+
+5) Now that we have a baseline for GT, lets talk about two very important graph traversal algorithms. BFS and DFS.
+For BFS if you are confused then this video is helpful https://www.youtube.com/watch?v=oDqjPvD54Ss
+For DFS you can watch this https://www.youtube.com/watch?v=7fujbpJ0LB4

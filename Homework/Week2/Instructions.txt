@@ -1,0 +1,3 @@
+Go to the online grader and work on J4 from both 2019 and 2020.
+
+As a bonus try working on J5 from 2019. We will be working on this next class. Hint: Try using Depth First Search
