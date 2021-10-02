@@ -1,0 +1,16 @@
+1) Take up the code for J4 from both 2020 and 2019
+
+2) Talk about Adjacency Matrix and Adjacency List
+(BTW this is a great website for this https://www.geeksforgeeks.org/graph-and-its-representations/)
+
+3) Talk about recursion
+  - Can you compute the nth fib number?
+
+3) Now that we have a baseline for GT, lets talk about two very important graph traversal algorithms. BFS and DFS.
+For BFS if you are confused then this video is helpful https://www.youtube.com/watch?v=oDqjPvD54Ss
+For DFS you can watch this https://www.youtube.com/watch?v=7fujbpJ0LB4
+
+4) Talk about how to answer J4 from 2019
+
+5) Answer this DFS question
+  - Use DFS to detect if a cycle exist in a undirected and directed graph (Can we do it using recursion and iteration methods?)
