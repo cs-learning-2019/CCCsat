@@ -1,3 +1,14 @@
+1) Watch the videos for DFS and BFS (links in the lesson plan)
+
+2) Review adj list (you could also just watch a Youtube video)
+
+3) Review and really make sure you understand bfs and dfs
+
+
+
+
+
+(All of this below is optional since I did not fully finish the lesson)
 1) Go to the CCC online grader and answer J5 from 2019. This was a bonus from Week 2 homework. We talked about how to answer this in class
 
 2) Answer the following question
