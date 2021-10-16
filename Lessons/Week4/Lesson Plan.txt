@@ -4,7 +4,27 @@ For DFS you can watch this https://www.youtube.com/watch?v=7fujbpJ0LB4
 
 2) Talk about how to answer J5 from 2019
 
+1) First setup the data structures that we need and get the inputs (there are 4 lines of input)
+2) Setup the visited set and this will be a 2D set. It will have 16 subsets
+ie / {{}, {}, {}, .....}
+3) Define a helper function which produces all the node/states we can get to
+from cur_word by subbing all occurrences of src with dst.
+We return a list of all the new nodes/state
+4) Now we just program recursive DFS
+def DFS_find_moves(cur_word, cur_step_num, recursive_stack)
+    if the cur_step_num to big or cur_word is already visited then return False (in otherwords get out)
+
+    Add the cur_word (node) to the visited set
+
+    check to see if we reached our target
+        if we did reach the target then loop over your recursive stack and print all node (which are the steps) and return true
+    
+    
+     loop over the three rules and for each rule use the helper function to generate all the new nodes
+         for each of the new nodes
+            create a new recursive stack and add the new node to it
+            call dfs again and if it return true then you also return true 
+
+
 3) Answer this DFS question
   - Use DFS to detect if a cycle exist in a undirected and directed graph (Can we do it using recursion and iteration methods?)
-
-4) Do a BFS question (array traversal)
