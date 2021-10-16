@@ -6,3 +6,5 @@ For DFS you can watch this https://www.youtube.com/watch?v=7fujbpJ0LB4
 
 3) Answer this DFS question
   - Use DFS to detect if a cycle exist in a undirected and directed graph (Can we do it using recursion and iteration methods?)
+
+4) Do a BFS question (array traversal)
