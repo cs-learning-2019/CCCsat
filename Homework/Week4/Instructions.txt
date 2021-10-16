@@ -1,0 +1,34 @@
+1) Go to the CCC online grader and answer J5 from 2019. We talked about how to answer this in class
+
+2) Answer the following question
+Using recursive DFS, program a function to determine whether or not a directed graph contains a cycle.
+You do not need to code the part where we loop over all the nodes in between the DFS calls to ensure all nodes have been visited.
+
+Here are two test cases to help you
+directed_no_cycle_graph = {1:[2, 3], 2:[4], 3:[4], 4:[]}
+directed_cycle_graph = {1:[2, 3], 2:[4], 3:[4], 4:[5], 5:[3]}
+
+3) Answer the following question
+Given a N by N 2D list (where n >= 2) containing zeros and ones determine the smallest number of moves required to jump from the
+top left to the bottom right. Here are the rules, you are only allowed to jump one cell at a time and only up, down,
+left or right. Diagonal movement is not allowed. Also you are only allowed to jump to cells containing the number one.
+You may assume that the top left cell always contains a one. If going to the bottom right is not possible then print "Not possible".
+
+Here are two examples.
+
+Ex 1)
+
+grid = [[1, 0], [0, 1]]  ---> [[1, 0]
+			       [0, 1]]
+
+The output is: "Not possible".
+
+Ex 2)
+grid = [[1, 1, 0], [0, 1, 1], [1, 0, 1]]  ---> [[1, 1, 0]
+			                        [0, 1, 1]
+                                                [1, 0, 1]]
+
+The output is: 4
+
+
+Hint: Use BFS
