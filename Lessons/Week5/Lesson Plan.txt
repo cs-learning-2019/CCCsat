@@ -6,4 +6,11 @@
 
 4) Go over J4 from both 2018 and 2017 (These two will be your HW questions)
 
+sunflower
+1) Need a helper function that takes the starting orientation and creates the new orientation by rotating 90 degrees 
+(take all your rows and make then columns then reverse each row)
+2) Need a helper function that takes a orientation and checks whether or not it is valid (just check the cell to your right and below)
 
+Fav time
+1) Need a function that check if a given time is an arithmetic seq
+2) You need to optimize (notice that one day is 1440 min and half day is 720 min)
