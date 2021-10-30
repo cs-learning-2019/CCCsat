@@ -1,0 +1,33 @@
+1) Ice breaker question: 1080p/240fps or 4K/30fps also in a zombie infested world would you take a shotgun, pistol or assualt rifle.
+
+2) Take up the code for 2018 and 2017 J4 (Doing the questions was your homework)
+
+3) Discuss J5 2017 and how to tackle this problem
+- What is counting sort
+- Is there an alternative solution to J5 2017?
+
+# First get the input
+N = int(input())
+wood = input().split(" ")
+
+# Create data structures to hold on to data
+size_to_number_of_wood = [0] * 2001
+heights_to_number_of_boards = [0] * 4001
+
+# Process the wood input (list of given wood sizes)
+# We need to count how many pieces of wood we have of each size
+for wood_size in wood:
+    size_to_number_of_wood[int(wood_size)] += 1
+
+# Determine the number of boards we can create for each size
+<Students will fill this in>
+
+
+# Get the longest length of fence and how many different height can be used
+<Students will fill this in>
+
+# Print the answer
+print(longest_length, number_of_possible_heights)
+
+
+4) https://dmoj.ca/problem/tle16c6s1
