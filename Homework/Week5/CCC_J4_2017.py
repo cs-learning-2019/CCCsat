@@ -44,7 +44,6 @@ hour = 12
 minute = 0
 arithmetic_seqs_found = 0
 
-
 if D <= 720:
     for i in range(D):
         minute += 1

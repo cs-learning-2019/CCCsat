@@ -36,7 +36,7 @@ def check_data(data):
 
 # Define a helper function to rotate the data matrix by 90 degrees
 # We will turn all rows into columns and then reverse all rows.
-# Doing this gives a rotation of 90 degress counter clockwise
+# Doing this gives a rotation of 90 degress clockwise
 def rotate_data(data):
     new_data = [row.copy() for row in data]
 
