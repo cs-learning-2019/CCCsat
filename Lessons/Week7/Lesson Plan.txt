@@ -1,0 +1,14 @@
+1) Take up J5 2017 (both solutions)
+
+2) Ice breaker question:
+In a zombie infested world would you take a shotgun, pistol or assualt rifle.
+
+2) Sorting and counting sort
+- What kind of sorting algorithms are there
+- Code up counting sort
+
+3) Work on J4 for both 2015 and 2016
+I will explain the questions and you will work on them during class
+
+4) Work on J5 for 2016
+- Note that there is a reason why I talked about sorting in todays class
