@@ -1,0 +1,14 @@
+1) Taking a closer look at generating fib seq and dynamic programming
+- Brute force algorithm (simple recursion)
+- What exactly is dynamic programming
+- Dynamic programming method for fib
+
+2) The hard part for most DP problems is figuring out the recursive relationship
+that defines what the solution to n is based on previous values. In otherwords,
+how do I form the solution to my problem by using the result of smaller problems.
+
+Lets take a look at two relatively simple examples from a text book
+
+3) Now lets take a look at a DP problem and code up the solution.
+
+4) work on J5 for 2015

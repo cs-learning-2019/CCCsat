@@ -1,0 +1,13 @@
+1) Complete J5 from the 2015 contest
+# First get the input
+# Build the DP array
+# Fill in the DP array 
+# Print the answer
+
+NOTE:
+If there is one person then the answer is always 1 no matter how many cakes
+Also if n = k then there is only one way as well (each person gets exactly one cake)
+
+2) Complete the following question DP question
+Find the question here https://www.techiedelight.com/rod-cutting/
+PLEASE DO NOT LOOK AT THE ANSWER UNTIL YOU HAVE TRIED THE QUESTION
