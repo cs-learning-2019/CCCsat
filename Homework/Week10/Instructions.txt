@@ -1,0 +1,5 @@
+1) Look at this DP question and attempt it
+https://www.techiedelight.com/coin-change-making-problem-unlimited-supply-coins/
+
+2) Look at this DP question and attempt it
+https://www.techiedelight.com/partition-problem/
