@@ -1,0 +1,7 @@
+1) Take up solutions to the HW (week 10)
+https://www.techiedelight.com/coin-change-making-problem-unlimited-supply-coins/
+https://www.techiedelight.com/partition-problem/
+
+2) Revisit this problem --> https://www.techiedelight.com/longest-common-subsequence/
+
+3) Look at https://www.techiedelight.com/levenshtein-distance-edit-distance-problem/
