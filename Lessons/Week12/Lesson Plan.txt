@@ -1,0 +1,8 @@
+1) Quick discussion about Python CCC and AI and applications in Python
+
+2) Take up CCC 2014 Junior (Post-Contest) (ONLY J4 and J5)
+
+3) Binary Search and https://www.geeksforgeeks.org/find-a-peak-in-a-given-array/  (Divide and Conquer)
+
+4) Try out this question if we have time (Credit to Jeremy for this one)
+https://dmoj.ca/problem/dmopc21c3p1
