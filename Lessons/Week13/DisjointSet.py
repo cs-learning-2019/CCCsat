@@ -37,8 +37,8 @@ class DisjointSet:
     # This implementation uses union by rank optimization
     def union(self, item1, item2):
         # First find the representative of the two items
-        rep1 = self.parent[item1]
-        rep2 = self.parent[item2]
+        rep1 = self.find(item1)
+        rep2 = self.find(item2)
 
         # We should always make the smaller rank piece a child of the bigger piece
         if self.rank[rep1] > self.rank[rep2]:
