@@ -2,7 +2,7 @@
 
 2) Talk about weighted graphs, minimum spanning trees/forest and do a visual exmaple
 
-3) Introduce disjoint sets and disucss Kruskal's algorithm and code. Use the algorithm to find the MST.
+3) Introduce disjoint sets and disucss Kruskal's algorithm and code. Use the algorithm to find the MST.  (https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/)
 
 4) Quickly bring up Prim's algorithm for MST (https://www.youtube.com/watch?v=jsmMtJpPnhU)
 

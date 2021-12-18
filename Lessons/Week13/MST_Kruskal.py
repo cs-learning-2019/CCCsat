@@ -1,4 +1,3 @@
-
 # Python CCC
 # Kruskal's Algorithm for finding MST
 # Kavan Lam

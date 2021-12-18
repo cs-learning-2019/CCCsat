@@ -40,6 +40,11 @@ class DisjointSet:
         rep1 = self.find(item1)
         rep2 = self.find(item2)
 
+        # If the reps are the same then do not have to do anything
+        # since they are already in the same group
+        if rep1 == rep2:
+            return
+
         # We should always make the smaller rank piece a child of the bigger piece
         if self.rank[rep1] > self.rank[rep2]:
             self.parent[rep2] = rep1
