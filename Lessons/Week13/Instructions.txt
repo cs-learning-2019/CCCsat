@@ -1,0 +1,9 @@
+1) Quick note about holiday and important dates
+
+2) Talk about weighted graphs, minimum spanning trees/forest and do a visual exmaple
+
+3) Introduce disjoint sets and disucss Kruskal's algorithm and code. Use the algorithm to find the MST.
+
+4) Quickly bring up Prim's algorithm for MST (https://www.youtube.com/watch?v=jsmMtJpPnhU)
+
+5) Discuss how this question can be answered https://dmoj.ca/problem/dmopc21c3p1

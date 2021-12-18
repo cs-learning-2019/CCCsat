@@ -8,7 +8,7 @@ def binary_search(arr, x):
     mid = 0
  
     while low <= high:
- 
+        # Get the middle index
         mid = (high + low) // 2
  
         # If x is greater, ignore left half

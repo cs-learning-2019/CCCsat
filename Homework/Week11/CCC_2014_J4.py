@@ -17,15 +17,15 @@ for round_number in range(m):
 
     # Remove the unwanted friends
     new_list = []
-    index = 0
+    position = 1
     for friend_num in k_list:
-        if not((index + 1) % r == 0):
+        if not(position % r == 0):
             new_list.append(friend_num)
-        index += 1
+        position += 1
         
     k_list = new_list
 
 # Print the remaining friends
-for friend in k_list:
-    print(friend)
+for friend_num in k_list:
+    print(friend_num)
 

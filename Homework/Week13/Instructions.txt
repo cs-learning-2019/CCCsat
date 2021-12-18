@@ -1,0 +1,91 @@
+For the break I have compiled a list of 10 questions that you can work on.
+These questions are meant to help prepare you for the CCC. The break is three week long
+so on average I expect that you would work on 3 questions per week.
+The last question is a bonus and is optional.
+
+Question 1:
+Given an array of numbers where each number >= 0 find a pair of numbers that produces a minimum difference. You may assume that the
+length of the array is >= 2 and that the largest integer possible in the array is 15000. Note: for this question your are NOT allowed to
+sort the array.
+
+For example, if the input array is [10, 20, 11, 22] your code's output should be
+(10, 11) or (11, 10) order does not matter. This is because the pair (10, 11) has a difference of 1 which is the lowest possible using
+the numbers from the array. To be clear your code only needs to print (10, 11) or (11, 10) NOT BOTH.
+
+As another example, if the input array is [10, 11, 15, 16] your code should output ONLY one of the following
+(10, 11) or (11, 10) or (15, 16) or (16, 15). The pair (10, 11) and (15, 16) both have a difference of 1 so either one is correct.
+
+Note: 10-11 = -1  and 11-10 = 1 but the difference is still considered 1. So when calculating differences you should use the abs() function
+so abs(10-11) => 1
+
+As a final example, if the input array is [10, 10, 20, 100] your code should output (10, 10) (the minimum difference is 0)
+
+
+Question 2:
+Answer this BFS question https://www.techiedelight.com/count-the-number-of-islands/
+NOTE: THE SOLUTION IS ALSO THERE BUT PLEASE ONLY LOOK AT IT AFTER YOU HAVE ATTEMPTED THE QUESTION
+Also note that you could use DFS to solve this.
+
+
+Question 3:
+Given a connected, undirected, weighted simple graph (each edge will have a weight of exactly 1) determine the length of the longest
+path between any two distinct vertices. As input you will be provided the adjacency list of the graph, but it will be in a map/dictionary.
+For example, the input could be {1:[2, 4], 2:[1, 3, 5], 3:[2, 6], 4:[1, 7, 5], 5:[2, 4, 5], 6:[3, 5, 8, 9], 7:[4], 8:[6, 9], 9:[6, 8]}
+and the output will be 7 since that is the length of the longest path between any two vertices.
+I got 7 by following this path 1 --> 4 --> 5 --> 2 --> 3 --> 6 --> 8 --> 9
+You can also get 7 by 7 --> 4 --> 1 --> 2 --> 5 --> 6 --> 8 --> 9
+Look at the picture that I drew as an example, the answer for that graph would be 7.
+Just note that a path means NO repeat vertices. So this means for a given path you are not allowed to visit the same vertex more than once.
+HINT: Use DFS multiple times.
+Note: This question does not have an efficient solution so as long as your code works that is good enough
+
+
+Question 4:
+Answer this question https://www.techiedelight.com/maximum-sum-subarray-using-divide-conquer/
+This is a divide and conquer problem but can actually be solved even faster using a non divide and conquer method.
+You can code this one using what ever method you like.
+
+
+Question 5:
+Answer this DP question https://www.techiedelight.com/maximum-product-rod-cutting/
+Note: in class we did a similar question
+
+
+Question 6: 
+Answer this DP question https://www.techiedelight.com/find-n-digit-binary-strings-without-consecutive-1s/
+Note: in class we talk about a question similar to this one but we never coded it.
+
+
+Question 7:
+Given an unsorted array of integers of length n where n >= 1, find the k^th smallest integer in the list without sorting the list.
+You may assume that n >= k. Note: you are not allowed to sort the list since that would make the question two easy, but also because
+there is a more efficient way. My solution uses something called a min heap. I recommend you research about it and give it a shot.
+
+
+Question 8:
+Given an array containing n distinct names (strings) that represents the list of students in a class and also another array containing
+pairs of students which represent which pairs of students are matched together, your goal is to determine the number of groups that are
+present in the class.
+
+For example, the list of names is ["Abby", "Bob", "Kevin", "Lin", "Kate", "Lily"] and the list of pairs is [("Abby", "Bob"), ("Lin", "Bob"), ("Lin", "Abby"), ("Kate", "Lily")].
+In this case the number of groups is 3 (so your code should return/print 3). The reason is becuase Abby is matched with Bob and Bob is matched with Lin which means Abby, Bob and Lin
+are all in the same group. Kevin is in his own group by himself. Kate and Lily are in one group. So in total we have 3 groups.
+
+Note: try your best to ensure that the code is as efficient as possible (hint: I taught you something in class that can easily solve this problem efficiently)
+
+
+Question 9:
+Answer this question https://www.techiedelight.com/activity-selection-problem/  (Hint: a potential solution involves sorting)
+Please only look at the solution once you have tried your best and have given up
+
+
+
+Question 10:
+Answer this question https://www.techiedelight.com/weighted-interval-scheduling-problem/  (You must use DP)
+Please only look at the solution once you have tried your best and have given up
+
+
+
+
+
+
