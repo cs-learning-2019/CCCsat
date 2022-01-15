@@ -1,0 +1,11 @@
+1) Ice breaker: How was your holiday break and did anything exciting happen
+
+2) Quick review of disjoint sets and classes
+
+3) Focus on union by rank optimization and quick review of path compression
+
+4) Take up question 8 from the holiday homework which involves using disjoint sets
+
+5) Review of what a MST is and bring up bring up Prim's algorithm for MST (https://www.youtube.com/watch?v=jsmMtJpPnhU)
+
+6) Go over Kruskal's algorithm and code

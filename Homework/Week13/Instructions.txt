@@ -5,7 +5,7 @@ The last question is a bonus and is optional.
 
 Question 1:
 Given an array of numbers where each number >= 0 find a pair of numbers that produces a minimum difference. You may assume that the
-length of the array is >= 2 and that the largest integer possible in the array is 15000. Note: for this question your are NOT allowed to
+length of the array is >= 2 and that the largest integer possible in the array is 15000. Note: for this question you are NOT allowed to
 sort the array.
 
 For example, if the input array is [10, 20, 11, 22] your code's output should be
