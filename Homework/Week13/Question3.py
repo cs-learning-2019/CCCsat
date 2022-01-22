@@ -53,11 +53,7 @@ def dfs(G, node):
         return
 
     visited.add(node)
-    print(node, end=" ")
 
-    if node not in G:
-        return
-    
     neighbours = G[node]
     for next_node in neighbours:
         dfs(G, next_node)
