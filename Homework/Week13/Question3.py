@@ -18,7 +18,7 @@ def DFS_max_dist(G, node, depth):
     
     neighbours = G[node]
     for next_node in neighbours:
-        dist = DFS_max_dist(G, next_node, depth + 1)
+        DFS_max_dist(G, next_node, depth + 1)
 
 
 def find_max_distance(graph):
