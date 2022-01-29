@@ -1,0 +1,10 @@
+1) Talk about queues and stacks. What if we had a line up but some people were special and get special treatment.
+   We could sort the line up by priority and always serve the first person in line. If a new person enters then we
+   can do a linear search to find the correct placement for the new person.
+
+2) Introduce priority queues and MIN/MAX heaps
+
+3) See the code for MIN/MAX heaps
+
+4) Use MIN/MAX heaps to solve problems
+- Question 7 from Winter break HW
