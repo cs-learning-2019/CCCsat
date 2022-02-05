@@ -5,4 +5,4 @@
 3) Use MIN/MAX heaps to solve problems
 - Question 7 from Winter break HW
 
-4) Talk about Dijkstra’s Algorithm
+4) Talk about Dijkstra’s Algorithm https://www.techiedelight.com/single-source-shortest-paths-dijkstras-algorithm/
