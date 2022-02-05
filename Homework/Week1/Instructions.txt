@@ -1,0 +1,13 @@
+Answer the following questions
+
+1) In class I showed you the code for Min Heaps. I want you to code Max Heaps. Feel free to copy my code and
+   make edits. It should be very similar to the Min Heap code.
+
+2) Write a function that takes in an array of integers and returns True if the array satisfies the min heap property
+
+3) Write a function that takes in an array of integers and returns the sorted array. You need to sort from smallest to highest.
+   For sorting you are not allowed to use the the sort() method/function. You need to only use min heaps to solve this problem.
+   Note: this is called the heap sorting algorithm
+
+4) In class we talked about Dijkstra's algorithm and this problem specifically https://www.techiedelight.com/single-source-shortest-paths-dijkstras-algorithm/
+   I did not cover the code since I want you to do it for homework. Try your best.
