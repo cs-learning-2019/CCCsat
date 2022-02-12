@@ -1,0 +1,13 @@
+We talked about Dijkstra’s Algorithm in class. I want you to program it now...
+
+If you need some help you can look here for some help...
+https://www.techiedelight.com/single-source-shortest-paths-dijkstras-algorithm/
+
+Your code will take in a list of vertices. For simplicity the vertices will just be whole numbers. For example, [0, 1, 2, 3, 4]
+which means we have 5 nodes with the last one with a label of 4. Your code will also take in a list of edges where each edge
+has the form (x, y, w) where x is the number for vertex x and y is the number for vertex y and w is the weight. For example,
+(2, 4, 10) means there is an edge between vertex 2 and 4 with a weight of 10. You may assume that all edges are bi-directional.
+In otherwords, we are only dealing with undirected graphs. Finally your code will take in a source vertex which should be one of
+numbers in the list of vertices. You code will determine the minimum cost to reach every non-source vertex and also the path.
+The min cost and path must be printed. If a path between the source vertex and one of the non-source vertex does not exist then the
+min cost is infinity and the path is "Does not exist". 

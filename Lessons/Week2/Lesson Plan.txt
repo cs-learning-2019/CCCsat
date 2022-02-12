@@ -1,0 +1,7 @@
+0) Huge reminder that FL can not host CCC
+
+1) Take up homework question
+
+2) Talk about Dijkstra’s Algorithm https://www.techiedelight.com/single-source-shortest-paths-dijkstras-algorithm/
+
+3) Begin AI (refer to slides)
