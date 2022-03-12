@@ -1,0 +1,5 @@
+1) Download and install Python/PyCharm (If you don't want to use PyCharm that is fine)
+
+2) Get the Search project setup
+
+3) Try to do the first 4 questions
