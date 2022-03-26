@@ -113,12 +113,52 @@ def depthFirstSearch(problem):
 def breadthFirstSearch(problem):
     """Search the shallowest nodes in the search tree first."""
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    open_list = util.Queue()
+    open_list.push([(problem.getStartState(), "", 0)])
+    seen = {problem.getStartState(): 0}
+
+    while not open_list.isEmpty():
+        node = open_list.pop()
+        end_state = node[len(node) - 1][0]
+        move_list = []
+        for step in node:
+            move_list.append(step[1])
+        move_list.pop(0)
+        if problem.getCostOfActions(move_list) <= seen[end_state]:
+            if problem.isGoalState(end_state):
+                return move_list
+            for succ in problem.getSuccessors(end_state):
+                state_pos = succ[0]
+                if (state_pos not in seen) or (problem.getCostOfActions(move_list + [succ[1]]) < seen[state_pos]):
+                    open_list.push(node + [succ])
+                    seen[state_pos] = problem.getCostOfActions(move_list + [succ[1]])
+
+    return []  # No solution path found
 
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    open_list = util.PriorityQueue()
+    open_list.push([(problem.getStartState(), "", 0)], 0)
+    seen = {problem.getStartState(): 0}
+
+    while not open_list.isEmpty():
+        node = open_list.pop()
+        end_state = node[len(node) - 1][0]
+        move_list = []
+        for step in node:
+            move_list.append(step[1])
+        move_list.pop(0)
+        if problem.getCostOfActions(move_list) <= seen[end_state]:
+            if problem.isGoalState(end_state):
+                return move_list
+            for succ in problem.getSuccessors(end_state):
+                state_pos = succ[0]
+                if (state_pos not in seen) or (problem.getCostOfActions(move_list + [succ[1]]) < seen[state_pos]):
+                    open_list.push(node + [succ], problem.getCostOfActions(move_list + [succ[1]]))
+                    seen[state_pos] = problem.getCostOfActions(move_list + [succ[1]])
+
+    return []  # No solution path found
 
 def nullHeuristic(state, problem=None):
     """
@@ -130,7 +170,35 @@ def nullHeuristic(state, problem=None):
 def aStarSearch(problem, heuristic=nullHeuristic):
     """Search the node that has the lowest combined cost and heuristic first."""
     "*** YOUR CODE HERE ***"
-    util.raiseNotDefined()
+    open_list = util.PriorityQueue()
+    open_list.push([(problem.getStartState(), "", (0, heuristic(problem.getStartState(), problem)))],
+                   0 + heuristic(problem.getStartState(), problem))
+    seen = {problem.getStartState(): 0}
+
+    while not open_list.isEmpty():
+        node = open_list.pop()
+
+        # tie breaking
+        # You need to code this
+        # At the end of the tie breaking section your node variable will be set to the node that wins the tie break
+        # Note: if there was no tie then node does not change
+
+        move_list = [step[1] for step in node]
+        move_list.pop(0)
+        end_state = node[len(node) - 1][0]
+        if problem.getCostOfActions(move_list) <= seen[end_state]:
+            if problem.isGoalState(end_state):
+                return move_list
+            for succ in problem.getSuccessors(end_state):
+                state_pos = succ[0]
+                temp = (problem.getCostOfActions(move_list) + succ[2], heuristic(state_pos, problem))
+                succ = (succ[0], succ[1], temp)
+                if (state_pos not in seen) or (problem.getCostOfActions(move_list + [succ[1]]) < seen[state_pos]):
+                    open_list.push(node + [succ],
+                                   problem.getCostOfActions(move_list + [succ[1]]) + heuristic(state_pos, problem))
+                    seen[state_pos] = problem.getCostOfActions(move_list + [succ[1]])
+
+    return []  # No solution path found
 
 
 # Abbreviations

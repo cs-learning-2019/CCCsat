@@ -288,6 +288,7 @@ class CornersProblem(search.SearchProblem):
         # Please add any code here which you would like to use
         # in initializing the problem
         "*** YOUR CODE HERE ***"
+        self.goal = (1, 1, 1, 1)
 
     def getStartState(self):
         """
@@ -295,14 +296,14 @@ class CornersProblem(search.SearchProblem):
         space)
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        return self.startingPosition + (0, 0, 0, 0)
 
     def isGoalState(self, state):
         """
         Returns whether this search state is a goal state of the problem.
         """
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        return state[2:] == self.goal
 
     def getSuccessors(self, state):
         """
@@ -325,6 +326,22 @@ class CornersProblem(search.SearchProblem):
             #   hitsWall = self.walls[nextx][nexty]
 
             "*** YOUR CODE HERE ***"
+            x, y = state[0:2]
+            dx, dy = Actions.directionToVector(action)
+            nextx, nexty = int(x + dx), int(y + dy)
+            hitsWall = self.walls[nextx][nexty]
+            corner_flags = list(state[2:])
+            if not hitsWall:
+                if (nextx, nexty) == self.corners[0]:
+                    corner_flags[0] = 1
+                elif (nextx, nexty) == self.corners[1]:
+                    corner_flags[1] = 1
+                elif (nextx, nexty) == self.corners[2]:
+                    corner_flags[2] = 1
+                elif (nextx, nexty) == self.corners[3]:
+                    corner_flags[3] = 1
+                nextState = (nextx, nexty) + tuple(corner_flags)
+                successors.append((nextState, action, 1))
 
         self._expanded += 1 # DO NOT CHANGE
         return successors
@@ -485,7 +502,8 @@ class ClosestDotSearchAgent(SearchAgent):
         problem = AnyFoodSearchProblem(gameState)
 
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        prob = AnyFoodSearchProblem(gameState)
+        return search.bfs(prob)
 
 class AnyFoodSearchProblem(PositionSearchProblem):
     """
@@ -521,7 +539,7 @@ class AnyFoodSearchProblem(PositionSearchProblem):
         x,y = state
 
         "*** YOUR CODE HERE ***"
-        util.raiseNotDefined()
+        return self.food[x][y]
 
 def mazeDistance(point1, point2, gameState):
     """
