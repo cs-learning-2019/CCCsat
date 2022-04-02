@@ -324,7 +324,6 @@ class CornersProblem(search.SearchProblem):
             #   dx, dy = Actions.directionToVector(action)
             #   nextx, nexty = int(x + dx), int(y + dy)
             #   hitsWall = self.walls[nextx][nexty]
-
             "*** YOUR CODE HERE ***"
             x, y = state[0:2]
             dx, dy = Actions.directionToVector(action)
@@ -343,7 +342,7 @@ class CornersProblem(search.SearchProblem):
                 nextState = (nextx, nexty) + tuple(corner_flags)
                 successors.append((nextState, action, 1))
 
-        self._expanded += 1 # DO NOT CHANGE
+        self._expanded += 1  # DO NOT CHANGE
         return successors
 
     def getCostOfActions(self, actions):
@@ -370,14 +369,37 @@ def cornersHeuristic(state, problem):
       problem: The CornersProblem instance for this layout.
 
     This function should always return a number that is a lower bound on the
-    shortest path from the state to a goal of the problem; i.e.  it should be
-    admissible (as well as consistent).
+    shortest path from the state to a goal of the problem; i.e., it should be
+    admissible.
     """
     corners = problem.corners # These are the corner coordinates
     walls = problem.walls # These are the walls of the maze, as a Grid (game.py)
 
     "*** YOUR CODE HERE ***"
-    return 0 # Default to trivial solution
+    if problem.isGoalState(state):
+        return 0
+
+    corner_flags = list(state[2:])
+    pac_pos = list(state[0:2])
+    heuristic_value = 0
+    while corner_flags != [1, 1, 1, 1]:
+        dist = [-1, -1, -1, -1]
+        for i in range(4):
+            if corner_flags[i] == 0:
+                corner = corners[i]
+                dist[i] = abs(pac_pos[0] - corner[0]) + abs(pac_pos[1] - corner[1])
+        lowest = (0, 10000000000)
+        for i in range(4):
+            if dist[i] == -1:
+                continue
+            if dist[i] < lowest[1]:
+                lowest = (i, dist[i])
+        corner_flags[lowest[0]] = 1
+        heuristic_value += lowest[1]
+        pac_pos = corners[lowest[0]]
+    return heuristic_value
+
+
 
 class AStarCornersAgent(SearchAgent):
     "A SearchAgent for FoodSearchProblem using A* and your foodHeuristic"
@@ -442,16 +464,13 @@ class AStarFoodSearchAgent(SearchAgent):
         self.searchType = FoodSearchProblem
 
 def foodHeuristic(state, problem):
-    """
-    Your heuristic for the FoodSearchProblem goes here.
+    """Your heuristic for the FoodSearchProblem goes here.
 
-    This heuristic must be consistent to ensure correctness.  First, try to come
-    up with an admissible heuristic; almost all admissible heuristics will be
-    consistent as well.
+    This heuristic must be admissible to ensure correctness.
 
-    If using A* ever finds a solution that is worse uniform cost search finds,
-    your heuristic is *not* consistent, and probably not admissible!  On the
-    other hand, inadmissible or inconsistent heuristics may find optimal
+    If using A* ever finds a solution that is worse uniform cost
+    search finds, your heuristic is *not* admissible!  On the other
+    hand, inadmissible heuristics may occasionally find optimal
     solutions, so be careful.
 
     The state is a tuple ( pacmanPosition, foodGrid ) where foodGrid is a Grid
@@ -468,10 +487,42 @@ def foodHeuristic(state, problem):
     value, try: problem.heuristicInfo['wallCount'] = problem.walls.count()
     Subsequent calls to this heuristic can access
     problem.heuristicInfo['wallCount']
+
     """
     position, foodGrid = state
     "*** YOUR CODE HERE ***"
-    return 0
+    all_food = foodGrid.asList()
+    if len(all_food) == 0:
+        return 0
+
+    top, right = problem.walls.height - 2, problem.walls.width - 2
+    corners = ((1, 1), (1, top), (right, 1), (right, top))
+
+    close_corner_length = [-1, -1, -1, -1]
+    close_corner_points = [0, 0, 0, 0]
+    for c in range(len(corners)):
+        for food in all_food:
+            dist = abs(corners[c][0] - food[0]) + abs(corners[c][1] - food[1])
+            if close_corner_length[c] == -1 or dist < close_corner_length[c]:
+                close_corner_length[c] = dist
+                close_corner_points[c] = food
+
+    pac_pos = position
+    heuristic_value = 0
+    for i in range(4):
+        closest = ((0, 0), 100000000000)
+        count = 0
+        a = 0
+        for point in close_corner_points:
+            dist = abs(point[0] - pac_pos[0]) + abs(point[1] - pac_pos[1])
+            if closest[1] > dist:
+                closest = (point, dist)
+                count = a
+            a += 1
+        heuristic_value += closest[1]
+        pac_pos = closest[0]
+        close_corner_points.pop(count)
+    return heuristic_value
 
 class ClosestDotSearchAgent(SearchAgent):
     "Search for all food using a sequence of searches"
@@ -504,6 +555,7 @@ class ClosestDotSearchAgent(SearchAgent):
         "*** YOUR CODE HERE ***"
         prob = AnyFoodSearchProblem(gameState)
         return search.bfs(prob)
+
 
 class AnyFoodSearchProblem(PositionSearchProblem):
     """

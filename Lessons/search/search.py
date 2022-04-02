@@ -179,9 +179,21 @@ def aStarSearch(problem, heuristic=nullHeuristic):
         node = open_list.pop()
 
         # tie breaking
-        # You need to code this
-        # At the end of the tie breaking section your node variable will be set to the node that wins the tie break
-        # Note: if there was no tie then node does not change
+        f = node[len(node) - 1][2][0] + node[len(node) - 1][2][1]
+        while not open_list.isEmpty():
+            e = open_list.pop()
+            g_h = e[len(e) - 1][2]
+            if (g_h[0] + g_h[1]) == f:
+                if g_h[0] <= node[len(node) - 1][2][0]:
+                    open_list.push(e, g_h[0] + g_h[1])
+                    break
+                else:
+                    open_list.push(node, f)
+                    node = e
+                    f = node[len(node) - 1][2][0] + node[len(node) - 1][2][1]
+            else:
+                open_list.push(e, g_h[0] + g_h[1])
+                break
 
         move_list = [step[1] for step in node]
         move_list.pop(0)
