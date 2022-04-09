@@ -231,6 +231,27 @@ def betterEvaluationFunction(currentGameState):
 
     "*** YOUR CODE HERE ***"
     score = currentGameState.getScore()
+
+    # First lets look at the remaining foods and their distance to Pacman
+    closest_food_dist = 100000
+    for food_pos in newFood.asList():
+        if (currentGameState.hasFood(food_pos[0], food_pos[1])):
+            temp = util.manhattanDistance(food_pos, newPos)
+            closest_food_dist = min(closest_food_dist, temp)
+    score += 10 / closest_food_dist
+
+    # Now lets look at the position of the ghost(s) relative to Pacman
+    all_ghost_pos = currentGameState.getGhostPositions()
+    index = 0
+    for ghost in all_ghost_pos:
+        if newScaredTimes[index] > 10:
+            score += (400 / util.manhattanDistance(ghost, newPos))
+        elif util.manhattanDistance(ghost, newPos) <= 1:
+            score -= 100000000  # We must ensure Pacman does not die
+        elif util.manhattanDistance(ghost, newPos) > 1:
+            score -= 10 / (util.manhattanDistance(ghost, newPos))
+        index += 1
+
     return score
 
 # Abbreviation
