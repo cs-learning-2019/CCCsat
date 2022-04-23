@@ -1,0 +1,8 @@
+1) Take up the second assignment
+
+2) Begin talking about Machine Learning and Neural Networks 
+https://levity.ai/blog/difference-machine-learning-deep-learning
+
+- What kinds of problems can we not easily solve with what we learned so far?
+- What is machine learning vs deep learning vs AI vs neural networks?
+- Do an example involving linear regression

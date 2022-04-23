@@ -179,7 +179,44 @@ class AlphaBetaAgent(MultiAgentSearchAgent):
 
     def Alpha_Beta(self, depth, index, alpha, beta, game_state):
         "*** YOUR CODE HERE ***"
-        return None
+        if index == 0:  # we only need to decrement the depth when we get to Pacman's turn
+            depth -= 1
+        best_move = "Stop"  # Default value
+
+        # Check to see if we are at a leaf in the game tree
+        if depth == 0 or game_state.isWin() or game_state.isLose():
+            return (best_move, self.evaluationFunction(game_state))
+
+        # We are not at a leaf so check who is suppose to go
+        if index == 0:  # Pacman = Max player
+            value = -10000000
+        else:  # Otherwise it must be ghost = Min player
+            value = 10000000
+
+        # Expand the tree from the current node
+        for move in game_state.getLegalActions(index):
+            next_game_state = game_state.generateSuccessor(index, move)
+            if index == game_state.getNumAgents() - 1:
+                next_index = 0
+            else:
+                next_index = index + 1
+            sub_best_move = self.Alpha_Beta(depth, next_index, alpha, beta, next_game_state)
+            if index == 0:
+                if value < sub_best_move[1]:
+                    value = sub_best_move[1]
+                    best_move = move
+                if value >= beta:
+                    return (best_move, value)
+                alpha = max(alpha, value)
+            if (not (index ==  0)):
+                if value > sub_best_move[1]:
+                    value = sub_best_move[1]
+                    best_move = move
+                if value <= alpha:
+                    return (best_move, value)
+                beta = min(beta, value)
+
+        return (best_move, value)
 
 
 class ExpectimaxAgent(MultiAgentSearchAgent):
@@ -200,7 +237,36 @@ class ExpectimaxAgent(MultiAgentSearchAgent):
 
     def Expectimax(self, depth, index, game_state):
         "*** YOUR CODE HERE ***"
-        return None
+        if index == 0:  # we only need to decrement the depth when we get to Pacman's turn
+            depth -= 1
+        best_move = "Stop"  # Default value
+
+        # Check to see if we are at a leaf in the game tree
+        if depth == 0 or game_state.isWin() or game_state.isLose():
+            return (best_move, self.evaluationFunction(game_state))
+
+        # We are not at a leaf so check who is suppose to go
+        if index == 0:  # Pacman = Max player
+            value = -10000000
+        else:  # Otherwise it must be ghost = Chance player
+            value = 0
+
+        # Expand the tree from the current node
+        for move in game_state.getLegalActions(index):
+            next_game_state = game_state.generateSuccessor(index, move)
+            if index == game_state.getNumAgents() - 1:
+                next_index = 0
+            else:
+                next_index = index + 1
+            sub_best_move = self.Expectimax(depth, next_index, next_game_state)
+            if index == 0 and value < sub_best_move[1]:
+                value = sub_best_move[1]
+                best_move = move
+            if (not (index == 0)):
+                value += sub_best_move[1] * (1.0 / float(len(game_state.getLegalActions(index))))
+                best_move = move
+
+        return (best_move, value)
 
 def betterEvaluationFunction(currentGameState):
     """
