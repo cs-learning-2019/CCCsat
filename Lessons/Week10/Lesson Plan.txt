@@ -1,0 +1,31 @@
+1) Review the problem of finding the line of best fit
+
+2) What is Linear Regression?
+	- It is an algorithm under machine learning for finding the line of best fit
+	- That means we can use linear regression to solve our problem
+
+3) Lets take a closer look at how linear regression works and work through an exmaple
+	- This website is a good resource (https://towardsdatascience.com/linear-regression-using-gradient-descent-97a6c8700931)
+
+4) Gradient Descent (GD) is a very important algorithm and step in linear regression so we should talk a bit more on how this works
+	- We will begin with a 2D exmaple and the idea of slope
+	- Now lets move on to a 3D exmaple and the idea of the gradient
+	- GD is very important since this is the back bone for guiding us in the right direction when "training"
+	- GD is used in neural nets as well and we will discuss that in more detail later
+
+5) Now that you understand gradient descent lets put that into the context of AI
+	- GD on its own is just an optimization algorithm that attempts to minimize some cost function
+	- The cost function is an equation that quantifies how well your AI is doing. The bigger the value the worst.
+
+6) Up to this point we only discussed Linear regression which is an algorithm from ML, but what about NN (Neural Networks)
+	- NN or ANN (at a high level) is simply an artificial representation of human brains.
+	- There are many kinds of NN --> MLP (Multilayer perceptron), RNN (Recurrent NN), CNN (Convolutional NN) and more
+	- What might hear about deep learning (https://www.ibm.com/cloud/blog/ai-vs-machine-learning-vs-deep-learning-vs-neural-networks)
+
+7) We will focus on simply NNs for now (mainly MLP). Lets go into detail on how a simply NN is defined and how it works.
+	- MLP --> Is Feedforward and has at least three layers (Input and output layers and then 1 or more hidden layers)
+	- Each node is basically a neuron. These neurons have activation function. ReLu and Sigmod or exmaples.
+	- Each node also has a weight and some bias
+	- An important activation function that can be applied to the output layer is softmax (https://victorzhou.com/blog/softmax/)
+	- Our NN will have a cost or loss function (we want to minimize this)
+	- How does the NN learn --> Backpropagation (We will ignore the math here)
