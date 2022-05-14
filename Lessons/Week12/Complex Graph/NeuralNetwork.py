@@ -41,6 +41,10 @@ model = keras.Sequential([
 # across all output neurons equals 1.
 # If you are interested in what CategoricalCrossentropy is doing look here...
 # https://stackoverflow.com/questions/65131391/what-exactly-is-kerass-categoricalcrossentropy-doing
+# If you want more info on from_logits=True then go here
+# https://datascience.stackexchange.com/questions/73093/what-does-from-logits-true-do-in-sparsecategoricalcrossentropy-loss-function
+# If you want more info on the adam optimizer then go here
+# https://keras.io/api/optimizers/adam/
 model.compile(optimizer='adam', loss=keras.losses.SparseCategoricalCrossentropy(from_logits=True), metrics=['accuracy'])
 
 # Stack the x and y data to form the full array of input training data
@@ -60,5 +64,7 @@ model.evaluate(stacked_test_data, test_data_df.color.values)
 
 # Make a prediction
 print("PREDICTION RESULT")
-prediction = model.predict_classes(np.array([[-4, -4]]))
+prediction = model.predict(np.array([[-4, -4]]))
+classes = np.argmax(prediction, axis=1)
 print(prediction)
+print(classes)

@@ -1,0 +1,17 @@
+1) Review linear regression and gradient descent
+
+2) We will focus on simply NNs for now (mainly MLP). Lets go into detail on how a simply NN is defined and how it works.
+	- So A(wa+b) is the equation for activation of a single neuron
+	- An important activation function that can be applied to the output layer is softmax (https://victorzhou.com/blog/softmax/)
+	- To be super accurate we want to do BP for each piece of data and average all the changes we want to make to each weight and bias
+	but that is too expensive so we have mini batches. With mini batches we only do one BP for each mini batch.
+	- It is important to shuffle our data
+	- overfit and underfitting
+	- There is also the dropout which may help (it prevents overfitting, useful in cases where you don't have a lot of data)
+	- When to stop training? https://machinelearningmastery.com/early-stopping-to-avoid-overtraining-neural-network-models/
+	- So why do we want to batch the data and also shuffle it?
+	- https://stats.stackexchange.com/questions/245502/why-should-we-shuffle-data-while-training-a-neural-network/311318#311318
+
+3) Alright time to get down and dirty. Lets finally look at some code and make our first neural net
+- I am using Python 3.7 but I think 3.x should be fine. https://www.python.org/downloads/release/python-379/
+- You will need to go to your project interpreter and install Keras, numpy, pandas and tensorflow
