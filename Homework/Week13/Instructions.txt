@@ -1,10 +1,1 @@
-1) I recommend you review the code we covered in class and also look at the websites I recommended.
-
-2) I want you to write a neural network to solve a linear exmaple. There is a blue line and
-and red line. The neural net should be able to learn where the red and blue are. So if I give
-the neural network the x and y coordinates then the output should be a 0 or 1 (0=red and 1=blue).
-The data and graph is provided to you.
-
-3) Can you create a neural network that is able to square positive numbers. For example, you give the neural network 3 and the
-output is 9. You will have to generate you own data (in csv format)
-
+no homework

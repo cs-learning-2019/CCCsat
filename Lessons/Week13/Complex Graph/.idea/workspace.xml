@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NeuralNetwork.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="47" column="117" selection-start-line="47" selection-start-column="109" selection-end-line="47" selection-end-column="117" />
+            <state relative-caret-position="126">
+              <caret line="42" column="99" lean-forward="true" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
               <folding>
                 <element signature="e#325#353#0" expanded="true" />
               </folding>
@@ -46,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/test.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+            <state relative-caret-position="231">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -76,9 +76,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-565" />
-    <option name="y" value="185" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="160" />
+    <option name="y" value="80" />
     <option name="width" value="1700" />
     <option name="height" value="1015" />
   </component>
@@ -187,15 +187,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
-    <editor active="true" />
+    <frame x="128" y="64" width="1360" height="812" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1870456" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.022675738" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.6970509" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04411765" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -210,16 +209,6 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NeuralNetwork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="47" column="117" selection-start-line="47" selection-start-column="109" selection-end-line="47" selection-end-column="117" />
-          <folding>
-            <element signature="e#325#353#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Testing.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -230,6 +219,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/figure.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data/train.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -237,15 +236,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/test.csv">
+    <entry file="file://$PROJECT_DIR$/NeuralNetwork.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="126">
+          <caret line="42" column="99" lean-forward="true" selection-start-line="42" selection-start-column="99" selection-end-line="42" selection-end-column="99" />
+          <folding>
+            <element signature="e#325#353#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/figure.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
