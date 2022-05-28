@@ -51,7 +51,7 @@ model.compile(optimizer='adam', loss=keras.losses.SparseCategoricalCrossentropy(
 stacked_data = np.column_stack((training_data_df.x.values, training_data_df.y.values))
 
 # Train the neural network
-model.fit(stacked_data, training_data_df.color.values, batch_size=32, epochs=5)
+model.fit(stacked_data, training_data_df.color.values, batch_size=32, epochs=5, validation_split=0.1)
 
 # Parse the testing data (validation data)
 test_data_df = pd.read_csv('./data/test.csv')
@@ -64,7 +64,7 @@ model.evaluate(stacked_test_data, test_data_df.color.values)
 
 # Make a prediction
 print("PREDICTION RESULT")
-prediction = model.predict(np.array([[4, -4]]))
+prediction = model.predict(np.array([[4, -4], [-2, 4]]))
 classes = np.argmax(prediction, axis=1)
 print(prediction)
 print(classes)

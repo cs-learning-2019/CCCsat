@@ -1,0 +1,25 @@
+1) Review linear regression and gradient descent
+
+1) Finish talking about some important concepts I skipped over last class
+	- An important activation function that can be applied to the output layer is softmax (https://victorzhou.com/blog/softmax/)
+	- When to stop training? https://machinelearningmastery.com/early-stopping-to-avoid-overtraining-neural-network-models/
+	- There is validation data, training data and test data. We can look at the validation loss to for early stoppage.
+	- So why do we want to batch the data and also shuffle it?
+	- https://stats.stackexchange.com/questions/245502/why-should-we-shuffle-data-while-training-a-neural-network/311318#311318
+
+3) Lets continue with the complex graph example and discuss the code in more detail
+- Explain the code in Testing.py
+- Pay attention to input shape and shape of numpy array
+- What is Adam optimizer?
+- SparseCategoricalCrossentropy vs CategoricalCrossentropy
+- What is from_logits?
+- What is an epoch (How do we shuffle data between epochs? https://keras.io/api/models/model_training_apis/)
+- How to make multiple prediction at one time?
+- How to understand the row output of predict and how to convert to the predicted class
+
+4) Can we create a neural network that is able to square root positive numbers?
+- First we need to generate our own data (in csv format)
+- Then we need to design a neural network that is able to solve the problem
+- I won't code it for you since your homework is a very similar question and I don't want to give you the answer
+- for loss function we can use mean squared error
+- also for metric it does not make sense to use accuracy
