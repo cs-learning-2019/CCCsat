@@ -17,5 +17,5 @@ https://stats.stackexchange.com/questions/245502/why-should-we-shuffle-data-whil
 - I won't code it for you since your homework is a very similar question and I don't want to give you the answer
 - for loss function we can use mean squared error
 - also for metric it does not make sense to use accuracy
-- for shuffling try --> training_data_df.sample(frac=1).reset_index(drop=True)
+- for shuffling try --> training_data_df = training_data_df.sample(frac=1).reset_index(drop=True)
 - I had a batch size of 10 and 700 epochs and 500 data points

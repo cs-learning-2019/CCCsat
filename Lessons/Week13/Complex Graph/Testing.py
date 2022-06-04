@@ -16,6 +16,7 @@ print(training_data_df)
 # We can look at the values attribute which is a 2D numpy array where each sublist holds the data for one row
 print(training_data_df.values)
 
+
 # Use numpy to shuffle the training data
 np.random.shuffle(training_data_df.values)
 
