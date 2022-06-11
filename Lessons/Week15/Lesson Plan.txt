@@ -1,0 +1,8 @@
+1) Can we create a neural network that is able to square root positive numbers?
+- Lets take up the solution
+
+2) Can we create a neural network that is able to square a number?
+
+3) How can we save and load a neural network so we don't have to train it again to test more predictions?
+
+4) Word2vec and word embeddings
