@@ -1,0 +1,5 @@
+1) Quick review of Word2vec and word embeddings
+
+2) Cosine similarity in the context of word embeddings http://www.mit.edu/~hlb/StantonGrant/18.02/details/tex/lec1snip2-dotprod.pdf
+
+3) How word embeddings are created (using NN)
